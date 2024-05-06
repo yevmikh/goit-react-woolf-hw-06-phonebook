@@ -19,7 +19,7 @@ const ContactForm = () => {
   };
 
   const isContactExist = () =>
-    contacts.some(contact => contact.name === contactData.name);
+    contacts.some(contact => contact.name === contactData.name.toLowerCase());
 
   const handleSubmit = e => {
     e.preventDefault();
